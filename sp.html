@@ -9,7 +9,11 @@
     <script src="./sp.js" type="text/javascript"></script>
     <link href="./css/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
     <style type="text/css"><!--
-    .ui-btn {
+    .sphero {
+        font-size: 16pt;
+        color: #000;
+    }
+    select {
         width: 200px !important;
         font-size: 16pt;
         color: #000;
@@ -21,10 +25,12 @@
 
 <center style="color:#fff; font-size: 16pt">
     <b>Sphero:</b><br><select id="selectSphero" name="spheros"></select><br>
-    <b>Pebble:</b><br><select id="selectPebble" name="pebbles"></select><br>
     <br>
-    <input id="btnConnect" type="button" class="ui-btn" value="Start" data-role="button" />
-    <input id="btnDisconnect" type="button" class="ui-btn" value="Stop" data-role="button" />
+    <input id="btnForward" type="button" class="ui-btn sphero" value="↑" data-inline="true" data-role="button" /><br>
+    <input id="btnLeft" type="button" class="ui-btn sphero" value="←" data-inline="true" data-role="button" />
+    <input id="btnStop" type="button" class="ui-btn sphero" value="■" data-inline="true" data-role="button" />
+    <input id="btnRight" type="button" class="ui-btn sphero" value="→" data-inline="true" data-role="button" /><br>
+    <input id="btnBack" type="button" class="ui-btn sphero" value="↓" data-inline="true" data-role="button" /><br>
 </center>
 
 </div>
